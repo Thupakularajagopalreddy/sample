@@ -37,7 +37,7 @@ public class Register extends HttpServlet {
 		try 
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/rajagopal","root","rajagopal");
+			con = DriverManager.getConnection("jdbc:mysql://localhost/<" database name ">","root","< "password" >");
 			
 			String name = request.getParameter("name");
 			String classes = request.getParameter("class");
