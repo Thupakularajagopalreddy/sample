@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/rajagopal","root","rajagopal");
+			con = DriverManager.getConnection("jdbc:mysql://localhost/< "data base name" >","root","< "password" >");
 			String email = request.getParameter("email");
 			String pass = request.getParameter("pass");
 			
